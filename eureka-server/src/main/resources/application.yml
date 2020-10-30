@@ -13,4 +13,4 @@ eureka:
   server:
     enable-self-preservation: false
     #每隔30秒清除一次
-    eviction-interval-timer-in-ms: 30000
+    #eviction-interval-timer-in-ms: 30000
