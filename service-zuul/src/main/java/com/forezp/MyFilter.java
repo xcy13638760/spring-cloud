@@ -16,6 +16,12 @@ public class MyFilter extends ZuulFilter{
     private static Logger log = LoggerFactory.getLogger(MyFilter.class);
     @Override
     public String filterType() {
+        /*
+        pre：路由之前
+        routing：路由之时
+        post： 路由之后
+        error：发送错误调用
+        */
         return "pre";
     }
 
@@ -41,8 +47,9 @@ public class MyFilter extends ZuulFilter{
             ctx.setResponseStatusCode(401);
             try {
                 ctx.getResponse().getWriter().write("token is empty");
-            }catch (Exception e){}
-
+            }catch (Exception e){
+                log.error(e.getMessage(),e);
+            }
             return null;
         }
         log.info("ok");
