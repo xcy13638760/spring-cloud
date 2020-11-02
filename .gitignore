@@ -1,1 +1,12 @@
 /.idea/
+/config-client/target/
+/config-server/target/
+/config-client/.idea/
+/config-server/.idea/
+/service-feign/target/
+/service-feign/.idea/
+/service-hi/target/
+/service-ribbon/.idea/
+/service-ribbon/target/
+/service-zuul/.idea/
+/service-zuul/target/

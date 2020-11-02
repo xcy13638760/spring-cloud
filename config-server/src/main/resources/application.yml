@@ -1,3 +1,11 @@
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 1
+    lease-expiration-duration-in-seconds: 2
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.10.188:8761/eureka/
+
 server:
   port: 8888
 spring:
@@ -10,5 +18,7 @@ spring:
         git:
           searchPaths: repository
           uri: https://github.com/xcy13638760/spring-cloud-config-file
-          username: ''
-          password: ''
+          username: 'xcy13638760'
+          password: '123456'
+
+

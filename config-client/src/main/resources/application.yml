@@ -1,3 +1,10 @@
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 1
+    lease-expiration-duration-in-seconds: 2
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.10.188:8761/eureka/
 server:
   port: 8881
 spring:
@@ -5,6 +12,10 @@ spring:
     name: spring-cloud-config
   cloud:
     config:
+      discovery:    #  高可用
+        enabled: true
+        serviceId: config-server
       label: master
       profile: dev
-      uri: http://localhost:8888/
+#      uri: http://localhost:8888/   #固定访问
+
