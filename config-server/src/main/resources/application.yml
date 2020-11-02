@@ -8,7 +8,7 @@ spring:
       label: master
       server:
         git:
-          searchPaths: respo
-          uri: https://github.com/forezp/SpringcloudConfig/
+          searchPaths: repository
+          uri: https://github.com/xcy13638760/spring-cloud-config-file
           username: ''
           password: ''

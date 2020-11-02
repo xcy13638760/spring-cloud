@@ -2,7 +2,7 @@ server:
   port: 8881
 spring:
   application:
-    name: config-client
+    name: spring-cloud-config
   cloud:
     config:
       label: master
