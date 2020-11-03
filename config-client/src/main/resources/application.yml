@@ -8,6 +8,11 @@ eureka:
 server:
   port: 8881
 spring:
+  rabbitmq:
+    host: 192.168.10.188
+    port: 5672
+    username: admin
+    password: admin
   application:
     name: spring-cloud-config
   cloud:
@@ -18,4 +23,7 @@ spring:
       label: master
       profile: dev
 #      uri: http://localhost:8888/   #固定访问
+management:
+  security:
+    enabled: false
 
