@@ -10,3 +10,5 @@
 /service-ribbon/target/
 /service-zuul/.idea/
 /service-zuul/target/
+/server-zipkin/target/
+/service-miya/target/
