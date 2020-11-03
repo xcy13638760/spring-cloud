@@ -16,6 +16,8 @@
     <module>service-zuul</module>
     <module>config-client</module>
     <module>config-server</module>
+    <module>server-zipkin</module>
+    <module>service-miya</module>
   </modules>
 
   <name>cloud</name>
